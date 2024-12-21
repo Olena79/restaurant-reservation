@@ -90,11 +90,6 @@ cd restaurant-reservation
 - Command for filling slots table:
 
 ```sql
-
-Ось команда для заповнення таблиці slots значеннями часу від 11:00:00 до 22:00:00:
-
-sql
-Копировать код
 INSERT INTO slots (time)
 VALUES
 ('11:00:00'),
