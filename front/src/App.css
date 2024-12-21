@@ -1,0 +1,217 @@
+.app {
+	margin: 0 auto;
+	text-align: center;
+	padding: 40px;
+}
+
+.restaurant-name {
+	font-size: 40px;
+	font-weight: 700;
+	color: cadetblue;
+	padding-bottom: 40px;
+}
+
+.date-picker-button {
+	margin-bottom: 40px;
+	border: 1px solid cadetblue;
+	padding: 12px;
+	border-radius: 15px;
+	position: relative;
+	transition: 0.7s;
+
+	&:hover {
+		background-color: cadetblue;
+	}
+
+	&:active {
+		background-color: rgb(52, 102, 104);
+	}
+}
+
+.modal {
+	position: absolute;
+	background-color: white;
+	border: 1px solid cadetblue;
+	padding: 12px;
+	border-radius: 12px;
+	left: calc(50% - 75px);
+}
+
+.modal-content {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.date-input {
+	border: 1px solid cadetblue;
+	border-radius: 12px;
+	padding: 8px;
+}
+
+.table-grid {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 16px;
+	align-items: center;
+	justify-items: center;
+}
+
+.table-button {
+	border: 3px solid cadetblue;
+	width: fit-content;
+	padding: 12px;
+	border-radius: 50%;
+	transition: 0.5s;
+
+	&:hover {
+		background-color: cadetblue;
+	}
+
+	&:active {
+		background-color: rgb(75, 127, 129);
+	}
+}
+
+.modal-time {
+	position: absolute;
+	background-color: white;
+	border: 1px solid cadetblue;
+	padding: 12px;
+	width: 200px;
+	border-radius: 12px;
+	left: calc(50% - 100px);
+	top: 200px;
+}
+
+.modal-time-content {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.time-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.time-button {
+	border-bottom: 1px solid cadetblue;
+	transition: 0.5s;
+
+	&:hover {
+		background-color: beige;
+	}
+}
+
+.disabled {
+	background-color: rgb(191, 190, 190);
+	cursor: default;
+	&:hover {
+		background-color: rgb(191, 190, 190);
+	}
+}
+
+.close-button {
+	border: 1px solid rgb(207, 161, 168);
+	padding: 4px;
+	border-radius: 12px;
+	transition: 0.5s;
+
+	&:hover {
+		background-color: rgb(207, 161, 168);
+	}
+
+	&:active {
+		background-color: rgb(168, 123, 130);
+	}
+}
+
+.modal-confirm {
+	position: absolute;
+	background-color: white;
+	border: 1px solid cadetblue;
+	padding: 12px;
+	border-radius: 12px;
+	left: calc(50% - 129px);
+	top: 200px;
+}
+
+.modal-confirm-content {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.confirm-info {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.confirm-button {
+	border: 1px solid cadetblue;
+	padding: 4px;
+	border-radius: 12px;
+	transition: 0.5s;
+
+	&:hover {
+		background-color: cadetblue;
+	}
+
+	&:active {
+		background-color: rgb(70, 117, 119);
+	}
+}
+
+.reserved-tables {
+	position: absolute;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	width: 400px;
+	border: 1px solid cadetblue;
+	padding: 4px;
+	border-radius: 12px;
+	left: -400px;
+	top: 260px;
+}
+
+.show-reserved-button {
+	padding: 4px;
+	font-size: 12px;
+	background-color: cadetblue;
+	color: white;
+	border-radius: 12px;
+	transition: 0.5s;
+
+	&:hover {
+		background-color: rgb(67, 114, 115);
+	}
+}
+
+.reserved-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid cadetblue;
+}
+
+.reserved-item-text {
+	font-style: italic;
+}
+
+.reserved-item-tt {
+	color: cadetblue;
+	background-color: beige;
+	padding: 4px;
+	border-radius: 8px;
+}
+
+.delete-button {
+	font-size: 12px;
+	border: 1px solid rgb(168, 123, 130);
+	padding: 4px;
+	border-radius: 8px;
+}
